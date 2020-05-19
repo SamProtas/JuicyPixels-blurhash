@@ -71,7 +71,7 @@ jobs:
     - uses: actions/setup-haskell@v1.1
       name: Setup Haskell Stack
       with:
-        stack-version: ${{ matrix.stack }}
+        stack-version: latest
         enable-stack: true
         stack-no-global: true
         stack-setup-ghc: false
