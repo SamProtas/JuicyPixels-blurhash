@@ -1,0 +1,87 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 8c8469fec0ccde55ff00cdf50888072cb6598b18d16ea87172c944f28613915a
+
+name:           JuicyPixels-blurhash
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/SamProtas/JuicyPixels-blurhash#readme>
+homepage:       https://github.com/SamProtas/JuicyPixels-blurhash#readme
+bug-reports:    https://github.com/SamProtas/JuicyPixels-blurhash/issues
+author:         Sam Protas
+maintainer:     sam.protas@gmail.com
+copyright:      2020 Sam Protas
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/SamProtas/JuicyPixels-blurhash
+
+library
+  exposed-modules:
+      Codec.Picture.Blurhash
+      Codec.Picture.Blurhash.Internal.Base83
+      Codec.Picture.Blurhash.Internal.Common
+      Codec.Picture.Blurhash.Internal.Decode
+      Codec.Picture.Blurhash.Internal.DList
+      Codec.Picture.Blurhash.Internal.Encode
+  other-modules:
+      Paths_JuicyPixels_blurhash
+  hs-source-dirs:
+      src
+  build-depends:
+      JuicyPixels
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , vector
+  default-language: Haskell2010
+
+executable JuicyPixels-blurhash-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_JuicyPixels_blurhash
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      JuicyPixels
+    , JuicyPixels-blurhash
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , optparse-applicative
+    , vector
+  default-language: Haskell2010
+
+test-suite JuicyPixels-blurhash-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Blurhash
+      Paths_JuicyPixels_blurhash
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      JuicyPixels
+    , JuicyPixels-blurhash
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , filepath
+    , hedgehog
+    , tasty
+    , tasty-discover
+    , tasty-hedgehog
+    , tasty-hunit
+    , vector
+  default-language: Haskell2010
