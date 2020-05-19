@@ -58,9 +58,9 @@ jobs:
           - "lts-14.27"
           - "lts-15.13"
         include:
-          os: ubuntu-latest
-          resolver: nightly
-          experimental: true
+          - os: ubuntu-latest
+            resolver: nightly
+            experimental: true
         
 
 
