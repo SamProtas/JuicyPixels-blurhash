@@ -43,6 +43,7 @@ jobs:
     - name: Build
       run: |
         cabal update
+        cabal install --only-dependencies
         cabal build all --enable-tests --enable-benchmarks --write-ghc-environment-files=always
 
     - name: Test
