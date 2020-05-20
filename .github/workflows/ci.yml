@@ -8,7 +8,7 @@ on:
 
 jobs:
   cabal:
-    name: ${{ matrix.os }} / ghc ${{ matrix.ghc }}
+    name: cabal / ${{ matrix.os }} / ghc ${{ matrix.ghc }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -49,7 +49,7 @@ jobs:
       run: |
         cabal test all --enable-tests
   stack:
-    name: stack / resolver ${{ matrix.resolver }}
+    name: stack / ${{ matrix.os }} / resolver ${{ matrix.resolver }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -61,8 +61,6 @@ jobs:
           - os: ubuntu-latest
             resolver: nightly
             experimental: true
-        
-
 
     steps:
     - uses: actions/checkout@v2

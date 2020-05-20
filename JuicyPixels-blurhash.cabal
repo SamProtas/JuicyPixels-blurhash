@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8c8469fec0ccde55ff00cdf50888072cb6598b18d16ea87172c944f28613915a
+-- hash: 577abfefc88c587ae5efb75534b9270e26e052c450415e2dbd76b847e575a939
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.0
@@ -65,9 +65,6 @@ executable JuicyPixels-blurhash-exe
 test-suite JuicyPixels-blurhash-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
-  other-modules:
-      Blurhash
-      Paths_JuicyPixels_blurhash
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
@@ -85,3 +82,4 @@ test-suite JuicyPixels-blurhash-test
     , tasty-hunit
     , vector
   default-language: Haskell2010
+  other-modules: Blurhash

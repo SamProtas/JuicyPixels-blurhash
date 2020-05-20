@@ -39,13 +39,16 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - JuicyPixels-blurhash
-    - JuicyPixels
     - optparse-applicative
 
 tests:
   JuicyPixels-blurhash-test:
     main:                Spec.hs
     source-dirs:         test
+    # https://github.com/google/proto-lens/commit/7fa4db0edb2a672d1fd2dcfa95853b1dbb80d2f9
+    verbatim:
+      other-modules:
+        Blurhash
     ghc-options:
     - -threaded
     - -rtsopts
