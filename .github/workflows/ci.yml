@@ -44,7 +44,7 @@ jobs:
       run: |
         cabal update
         cabal install --only-dependencies
-        caba install tasty-discover
+        cabal install tasty-discover
         cabal build all --enable-tests --enable-benchmarks --write-ghc-environment-files=always
 
     - name: Test
