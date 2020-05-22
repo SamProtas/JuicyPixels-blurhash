@@ -1,11 +1,6 @@
-{-# LANGUAGE FlexibleContexts #-}
-{-# LANGUAGE ScopedTypeVariables #-}
-{-# LANGUAGE TypeApplications #-}
-{-# LANGUAGE FlexibleInstances #-}
-{-# LANGUAGE MultiParamTypeClasses #-}
 module Codec.Picture.Blurhash.Internal.Common where
 
-import Codec.Picture
+import Codec.Picture (Image, PixelRGB8(..), PixelRGBF(..), pixelMap)
 
 
 signPow :: Float -> Float -> Float

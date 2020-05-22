@@ -1,9 +1,5 @@
 module Codec.Picture.Blurhash
-  ( EncodeConfig (componentsX, componentsY)
-  , encodeConfigDefault
-  , EncodeError(..)
-
-  , encodeDynamic
+  ( encodeDynamic
   , encodeDynamicWithConfig
 
   , encodeRGB8
@@ -11,16 +7,27 @@ module Codec.Picture.Blurhash
 
   , encodeLinear
   , encodeLinearWithConfig
+
+  , EncodeConfig
+  , componentsX
+  , componentsY
   
-  , DecodeConfig(punch, outputWidth, outputHeight)
-  , decodeConfigDefault
-  , DecodeError(..)
+  , encodeConfigDefault
+  , EncodeError(..)
 
   , decodeRGB8
   , decodeRGB8WithConfig
   
   , decodeLinear
   , decodeLinearWithConfig
+
+  , DecodeConfig
+  , punch
+  , outputWidth
+  , outputHeight
+  
+  , decodeConfigDefault
+  , DecodeError(..)
   ) where
 
 import Codec.Picture.Blurhash.Internal.Encode

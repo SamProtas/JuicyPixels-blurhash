@@ -1,4 +1,3 @@
-{-# LANGUAGE FlexibleContexts #-}
 module Codec.Picture.Blurhash.Internal.Encode where
 
 import qualified Data.Bits as Bits
@@ -7,8 +6,8 @@ import Data.Foldable (foldl')
 
 import qualified Data.ByteString.Lazy as BS
 import qualified Data.ByteString.Lazy.Builder as BS
-import Codec.Picture
-import Codec.Picture.Types
+import Codec.Picture (DynamicImage, Image(..), PixelRGB8(..), PixelRGBF(..), convertRGB8, colorMap)
+import Codec.Picture.Types (pixelFold)
 
 import Codec.Picture.Blurhash.Internal.DList
 import Codec.Picture.Blurhash.Internal.Base83
