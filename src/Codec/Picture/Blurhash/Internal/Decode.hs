@@ -5,9 +5,9 @@ module Codec.Picture.Blurhash.Internal.Decode where
 import Control.Monad (when)
 import qualified Data.Bits as Bits
 import Data.Foldable (foldrM, foldl')
-import Data.Word
+import Data.Word (Word8)
 
-import Codec.Picture
+import Codec.Picture (Image, PixelRGB8(..), PixelRGBF(..), generateImage)
 import qualified Data.ByteString.Lazy as BS
 import qualified Data.Vector as V
 
