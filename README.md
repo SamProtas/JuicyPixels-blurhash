@@ -1,7 +1,7 @@
 # JuicyPixels-blurhash
 
 ![CI](https://github.com/SamProtas/JuicyPixels-blurhash/workflows/CI/badge.svg)
-![Hackage Version](https://img.shields.io/badge/hackage/JuicyPixels-blurhash?color=blue)
+![Hackage Version](https://img.shields.io/hackage/v/JuicyPixels-blurhash?color=blue)
 ![Hackage Deps](https://img.shields.io/hackage-deps/v/JuicyPixels-blurhash)
 
 
