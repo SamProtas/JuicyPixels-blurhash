@@ -10,6 +10,10 @@ extra-source-files:
 - README.md
 - ChangeLog.md
 
+extra-doc-files:
+  - docs/example.jpg
+  - docs/blurred.png
+
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
 # category:            Web

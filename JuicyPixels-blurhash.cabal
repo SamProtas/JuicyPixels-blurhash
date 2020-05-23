@@ -1,10 +1,10 @@
-cabal-version: 1.12
+cabal-version: 1.18
 
 -- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: da1b8ae1b159f2fdba892207f8e9a321e88cd6c6188ddf50eb7766eb2add22c8
+-- hash: 7cde4f0332aec1a5321444c62355a2bdd3702ba90ff7fc446070244969b6ad09
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.0
@@ -20,6 +20,9 @@ build-type:     Simple
 extra-source-files:
     README.md
     ChangeLog.md
+extra-doc-files:
+    docs/example.jpg
+    docs/blurred.png
 
 source-repository head
   type: git

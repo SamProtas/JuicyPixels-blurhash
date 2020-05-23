@@ -15,7 +15,20 @@
 -- 
 --   - The website: <https://blurha.sh/>
 -- 
---   - The central git repo: <https://github.com/woltapp/blurhash>  
+--   - The central git repo: <https://github.com/woltapp/blurhash>
+--
+-- An image such as:
+-- 
+-- <<docs/example.jpg>>
+--
+-- Can be encoded as:
+--
+-- LGFFaWYk^6#M@-5c,1Ex\@\@or[j6o
+--
+-- Which your client can render as:
+--
+-- <<docs/blurred.png>>
+--
 module Codec.Picture.Blurhash
   (
     -- * Example Use
@@ -54,7 +67,7 @@ module Codec.Picture.Blurhash
   , decodeRGB8
   , decodeLinear
 
-    -- ** Configured
+    -- ** Custom
   , decodeRGB8WithConfig
   , decodeLinearWithConfig
 
@@ -92,7 +105,7 @@ import Codec.Picture.Blurhash.Internal.Decode
 -- >>> :{
 --  do
 --    Right img <- readImage imgFilePath
---    print $ encodeDynamic img
+--    print $ BH.encodeDynamic img
 -- :}
 -- Right "UBMOZfK1GG%LBBNG,;Rj2skq=eE1s9n4S5Na"
 --
