@@ -15,8 +15,8 @@ extra-doc-files:
   - docs/blurred.png
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+synopsis:            Blurhash is a very compact represenation of a placeholder for an image
+category:            Graphics, Image
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is

@@ -4,11 +4,13 @@ cabal-version: 1.18
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7cde4f0332aec1a5321444c62355a2bdd3702ba90ff7fc446070244969b6ad09
+-- hash: e45283c97885b15746864eb0047cc10b59b460da5d045bdfa7bc3758dcbe7144
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.0
+synopsis:       Blurhash is a very compact represenation of a placeholder for an image
 description:    Please see the README on GitHub at <https://github.com/SamProtas/JuicyPixels-blurhash#readme>
+category:       Graphics, Image
 homepage:       https://github.com/SamProtas/JuicyPixels-blurhash#readme
 bug-reports:    https://github.com/SamProtas/JuicyPixels-blurhash/issues
 author:         Sam Protas
