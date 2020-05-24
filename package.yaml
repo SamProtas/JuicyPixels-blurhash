@@ -1,5 +1,5 @@
 name:                JuicyPixels-blurhash
-version:             0.1.0.0
+version:             0.1.0.1
 github:              "SamProtas/JuicyPixels-blurhash"
 license:             BSD3
 author:              "Sam Protas"
@@ -9,10 +9,12 @@ copyright:           "2020 Sam Protas"
 extra-source-files:
 - README.md
 - ChangeLog.md
+- docs/*
+- imgs/*
 
 extra-doc-files:
-  - docs/example.jpg
-  - docs/blurred.png
+  - docs/*
+
 
 # Metadata used when publishing your package
 synopsis:            Blurhash is a very compact represenation of a placeholder for an image
