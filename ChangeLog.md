@@ -1,5 +1,9 @@
 # Changelog for JuicyPixels-blurhash
 
+## 0.1.0.3
+
+  - Minor documentation fixes
+
 ## 0.1.0.2
 
   - README image paths absolute to fix hackage display
