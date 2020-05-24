@@ -17,7 +17,7 @@ For the full Blurhash sales pitch and algorithm explaination see either of:
 
 An image such as:
 
-![example image](docs/example.jpg)
+![example image](https://raw.githubusercontent.com/SamProtas/JuicyPixels-blurhash/master/docs/example.jpg)
 
 Can be encoded as:
 
@@ -25,7 +25,7 @@ LGFFaWYk^6#M@-5c,1Ex\@\@or[j6o
 
 Which your client can render as:
 
-![example blurred image](docs/blurred.png)
+![example blurred image](https://raw.githubusercontent.com/SamProtas/JuicyPixels-blurhash/master/docs/blurred.png)
 
 
 Full library documentation can be found in the Haddocks for `Codec.Picture.Blurhash`.
