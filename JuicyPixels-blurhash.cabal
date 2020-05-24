@@ -4,7 +4,7 @@ cabal-version: 1.18
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e45283c97885b15746864eb0047cc10b59b460da5d045bdfa7bc3758dcbe7144
+-- hash: b11b3e9f8a8847705dee439bbb085ea8de019c19a71f6a284f19dd4fbf358a36
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.0
@@ -22,9 +22,12 @@ build-type:     Simple
 extra-source-files:
     README.md
     ChangeLog.md
-extra-doc-files:
-    docs/example.jpg
     docs/blurred.png
+    docs/example.jpg
+    imgs/cool_cat.jpg
+extra-doc-files:
+    docs/blurred.png
+    docs/example.jpg
 
 source-repository head
   type: git
