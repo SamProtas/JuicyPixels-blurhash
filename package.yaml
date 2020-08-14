@@ -76,5 +76,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - JuicyPixels-blurhash
-    - doctest >= 0.16.2 && < 0.17
+    - doctest >= 0.16.2 && < 0.18
     - Glob >= 0.10 && < 0.11
