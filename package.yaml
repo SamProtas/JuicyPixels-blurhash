@@ -46,7 +46,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - JuicyPixels-blurhash
-    - optparse-applicative >= 0.14.3 && < 0.16
+    - optparse-applicative >= 0.14.3 && < 0.17
 
 tests:
   JuicyPixels-blurhash-test:
