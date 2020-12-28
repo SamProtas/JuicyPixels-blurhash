@@ -60,6 +60,7 @@ jobs:
         resolver:
           - "lts-14.27"
           - "lts-15.13"
+          - "lts-16.27"
         include:
           - os: ubuntu-latest
             resolver: nightly
