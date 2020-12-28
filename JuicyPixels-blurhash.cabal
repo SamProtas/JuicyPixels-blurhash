@@ -4,7 +4,7 @@ cabal-version: 1.18
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 970f2cc19fc2cb19914e27af46e93f898bfc7cb7c6ee5fca634e99e28fc94c69
+-- hash: 2f6f7082d679904e61311f59a11f08556212994b5f481ff4e2da6ec4d0d7b739
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.3
@@ -106,7 +106,7 @@ test-suite JuicyPixels-blurhash-test
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
     , hedgehog >=1.0.2 && <1.1
-    , tasty >=1.2.3 && <1.4
+    , tasty >=1.2.3 && <1.5
     , tasty-discover >=4.2.1 && <4.3
     , tasty-hedgehog >=1.0.0.2 && <1.1
     , tasty-hunit >=0.10.0.2 && <0.11
