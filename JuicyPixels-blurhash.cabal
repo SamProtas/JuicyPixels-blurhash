@@ -1,10 +1,10 @@
 cabal-version: 1.18
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 311d44194a99db0a49cd3dd42e2fa9549e4bd0bb425ebd6534b66c6387db8324
+-- hash: 85e3bceddd51866cadc1817ec0dbba18d092d2b9789f830aac2de925b8b9b9e7
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.3
@@ -81,13 +81,13 @@ test-suite JuicyPixels-blurhash-doctests
       doctest
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      Glob >=0.10 && <0.11
+      Glob ==0.10.*
     , JuicyPixels >=3.2.8 && <3.4
     , JuicyPixels-blurhash
     , base >=4.7 && <5
     , bytestring >=0.9 && <0.11
     , containers >=0.4.2 && <0.7
-    , doctest >=0.16.2 && <0.19
+    , doctest >=0.16.2 && <0.20
     , filepath >=1.4.1.1 && <1.5
     , vector >=0.10 && <0.13
   default-language: Haskell2010
