@@ -18,8 +18,8 @@ jobs:
         os: [ubuntu-latest, macOS-latest]
         ghc:
           - "8.6.5"
-          - "8.8.3"
-          - "8.10.1"
+          - "8.8.4"
+          - "8.10.7"
         include:
           - os: ubuntu-latest
             ghc: "latest"
@@ -59,8 +59,8 @@ jobs:
         os: [ubuntu-latest, macOS-latest, windows-latest]
         resolver:
           - "lts-14.27"
-          - "lts-15.13"
-          - "lts-16.27"
+          - "lts-16.31"
+          - "lts-18.23"
         include:
           - os: ubuntu-latest
             resolver: nightly
