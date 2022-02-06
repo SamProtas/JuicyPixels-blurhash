@@ -5,21 +5,20 @@ on:
   pull_request:
   push:
     branches: [master]
-  schedule:
-    - cron: 0 22 * * *
 
 jobs:
   cabal:
     name: cabal / ${{ matrix.os }} / ghc ${{ matrix.ghc }}
     runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macOS-latest]
         ghc:
-          - "8.6.5"
-          - "8.8.3"
-          - "8.10.1"
+          - "8.8.4"
+          - "8.10.7"
+        experimental: [false]
         include:
           - os: ubuntu-latest
             ghc: "latest"
@@ -27,13 +26,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: actions/setup-haskell@v1.1.4
+    - uses: haskell/actions/setup@v1
       id: setup-haskell-cabal
       name: Setup Haskell
       with:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: latest
-        enable-stack: false
+
 
     - uses: actions/cache@v1
       name: Cache cabal-store
@@ -54,13 +53,14 @@ jobs:
   stack:
     name: stack / ${{ matrix.os }} / resolver ${{ matrix.resolver }}
     runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.experimental }}
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
         resolver:
-          - "lts-14.27"
-          - "lts-15.13"
-          - "lts-16.27"
+          - "lts-16.31"
+          - "lts-18.23"
+        experimental: [false]
         include:
           - os: ubuntu-latest
             resolver: nightly
@@ -69,13 +69,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: actions/setup-haskell@v1.1.4
+    - uses: haskell/actions/setup@v1
       name: Setup Haskell Stack
       with:
         stack-version: latest
         enable-stack: true
         stack-no-global: true
-        stack-setup-ghc: false
 
     - name: Install resolver
       run: |
