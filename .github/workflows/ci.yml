@@ -33,7 +33,7 @@ jobs:
       with:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: latest
-        enable-stack: false
+
 
     - uses: actions/cache@v1
       name: Cache cabal-store
@@ -75,7 +75,6 @@ jobs:
         stack-version: latest
         enable-stack: true
         stack-no-global: true
-        stack-setup-ghc: false
 
     - name: Install resolver
       run: |
