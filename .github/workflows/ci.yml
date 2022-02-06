@@ -10,6 +10,7 @@ jobs:
   cabal:
     name: cabal / ${{ matrix.os }} / ghc ${{ matrix.ghc }}
     runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
     strategy:
       fail-fast: false
       matrix:
@@ -17,6 +18,7 @@ jobs:
         ghc:
           - "8.8.4"
           - "8.10.7"
+        experimental: [false]
         include:
           - os: ubuntu-latest
             ghc: "latest"
@@ -51,12 +53,14 @@ jobs:
   stack:
     name: stack / ${{ matrix.os }} / resolver ${{ matrix.resolver }}
     runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.experimental }}
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
         resolver:
           - "lts-16.31"
           - "lts-18.23"
+        experimental: [false]
         include:
           - os: ubuntu-latest
             resolver: nightly
