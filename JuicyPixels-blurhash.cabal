@@ -4,7 +4,7 @@ cabal-version: 1.18
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e7327d2f33a4d060d2a5d511b3894723736bb0e2623351dc0ff1fd16fc1f3e32
+-- hash: a13880b312d8089d0e3453ae123657a79882566e6890922feefabd771a386139
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.3
@@ -68,7 +68,7 @@ executable JuicyPixels-blurhash-exe
     , bytestring >=0.9 && <0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
-    , optparse-applicative >=0.14.3 && <0.17
+    , optparse-applicative >=0.14.3 && <0.18
     , vector >=0.10 && <0.13
   default-language: Haskell2010
 
