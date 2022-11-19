@@ -17,7 +17,7 @@ import Data.Foldable (foldlM)
 import Data.Word (Word8)
 
 import qualified Data.ByteString.Lazy as BS
-import qualified Data.ByteString.Lazy.Builder as BS
+import qualified Data.ByteString.Builder as BS
 import qualified Data.Map as Map
 import qualified Data.Vector as V
 

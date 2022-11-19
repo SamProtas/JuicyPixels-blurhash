@@ -4,7 +4,7 @@ cabal-version: 1.18
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a13880b312d8089d0e3453ae123657a79882566e6890922feefabd771a386139
+-- hash: f33aac24ad8dbfbd6bdefa22bf09c03d3733e952788699cec841d596525724a9
 
 name:           JuicyPixels-blurhash
 version:        0.1.0.3
@@ -48,7 +48,7 @@ library
   build-depends:
       JuicyPixels >=3.2.8 && <3.4
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.9 && <=0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
     , vector >=0.10 && <0.13
@@ -65,7 +65,7 @@ executable JuicyPixels-blurhash-exe
       JuicyPixels >=3.2.8 && <3.4
     , JuicyPixels-blurhash
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.9 && <=0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
     , optparse-applicative >=0.14.3 && <0.18
@@ -85,7 +85,7 @@ test-suite JuicyPixels-blurhash-doctests
     , JuicyPixels >=3.2.8 && <3.4
     , JuicyPixels-blurhash
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.9 && <=0.11
     , containers >=0.4.2 && <0.7
     , doctest >=0.16.2 && <0.20
     , filepath >=1.4.1.1 && <1.5
@@ -102,7 +102,7 @@ test-suite JuicyPixels-blurhash-test
       JuicyPixels >=3.2.8 && <3.4
     , JuicyPixels-blurhash
     , base >=4.7 && <5
-    , bytestring >=0.9 && <0.11
+    , bytestring >=0.9 && <=0.11
     , containers >=0.4.2 && <0.7
     , filepath >=1.4.1.1 && <1.5
     , hedgehog >=1.0.2 && <1.2
