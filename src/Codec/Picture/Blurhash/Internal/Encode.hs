@@ -18,7 +18,7 @@ import Data.Foldable (foldl')
 import GHC.Generics (Generic)
 
 import qualified Data.ByteString.Lazy as BS
-import qualified Data.ByteString.Lazy.Builder as BS
+import qualified Data.ByteString.Builder as BS
 import Codec.Picture (DynamicImage, Image(..), PixelRGB8(..), PixelRGBF(..), convertRGB8, colorMap)
 import Codec.Picture.Types (pixelFold, ColorConvertible(..)) -- ColorConvertible imported for haddocks
 
