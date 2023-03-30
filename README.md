@@ -9,7 +9,7 @@ Blurhash is a very compact representation of a placeholder for an image.
 
 This library provides a Blurhash encoding and decoding implementation based on the JuicyPixels representation of images.
 
-For the full Blurhash sales pitch and algorithm explaination see either of:
+For the full Blurhash sales pitch and algorithm explanation see either of:
 
   - The website: <https://blurha.sh/>
 

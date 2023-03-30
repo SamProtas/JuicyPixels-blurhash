@@ -11,7 +11,7 @@
 -- __Note__: This is an internal module not subject to PVP adherence.
 module Codec.Picture.Blurhash.Internal.DList where
 
--- | A type alias for a Difference list for effecient appents
+-- | A type alias for a Difference list for efficient appents
 type DList a = [a] -> [a]
 
 -- | Convert a list to a difference list

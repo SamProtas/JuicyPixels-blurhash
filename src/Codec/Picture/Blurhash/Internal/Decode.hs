@@ -161,7 +161,7 @@ decodePixel colors height width sizeY sizeX x y  = foldl' acc (PixelRGBF 0 0 0) 
       let i' = realToFrac i
           j' = realToFrac j
           basis = cos (pi * x' * i' / width') * cos (pi * y' * j' / height')
-          -- Vector index safe in practice, convered by garbage data and property tests
+          -- Vector index safe in practice, covered by garbage data and property tests
           PixelRGBF r' g' b' = colors V.! (i + j * sizeX) 
       in PixelRGBF (r + r' * basis) (g + g' * basis) (b + b' * basis)  
 

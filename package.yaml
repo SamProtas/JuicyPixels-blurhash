@@ -17,7 +17,7 @@ extra-doc-files:
 
 
 # Metadata used when publishing your package
-synopsis:            Blurhash is a very compact represenation of a placeholder for an image
+synopsis:            Blurhash is a very compact representation of a placeholder for an image
 category:            Graphics, Image
 
 # To avoid duplicated efforts in documentation and dealing with the
