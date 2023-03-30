@@ -59,7 +59,7 @@ data EncodeError
 encodeConfigDefault :: EncodeConfig
 encodeConfigDefault = EncodeConfig 4 4
 
--- | A helper funciton to validate the provided encoding component count.
+-- | A helper function to validate the provided encoding component count.
 checkComponent :: Int -> Either EncodeError Int
 checkComponent c
   | c < 1 || c > 9 = Left InvalidComponents
@@ -67,13 +67,13 @@ checkComponent c
 
 -- | Encode a 'DynamicImage' to a blurhash. Calls 'encodeDynamicWithConfig' with 'encodeConfigDefault'.
 --
--- Note: Relies on 'convertRGB8' before proceding with the standard Blurhash algorithm.
+-- Note: Relies on 'convertRGB8' before proceeding with the standard Blurhash algorithm.
 encodeDynamic :: DynamicImage -> Either EncodeError BS.ByteString
 encodeDynamic = encodeDynamicWithConfig encodeConfigDefault
 
 -- | Encode a 'DynamicImage' to a blurhash with a given an 'EncodeConfig'.
 --
--- Note: Relies on 'convertRGB8' before proceding with the standard Blurhash algorithm.
+-- Note: Relies on 'convertRGB8' before proceeding with the standard Blurhash algorithm.
 encodeDynamicWithConfig :: EncodeConfig -> DynamicImage -> Either EncodeError BS.ByteString
 encodeDynamicWithConfig config = encodeRGB8WithConfig config . convertRGB8  
 
